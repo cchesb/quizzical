@@ -1,0 +1,109 @@
+* {
+  font-family: "Karla", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F7FB;
+}
+
+main > div.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #293264;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+main > div.intro > h1 {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+main > div.intro > span {
+  font-weight: 350;
+  margin-bottom: 1.7em;
+}
+
+main > div.intro > button.start {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  background-color: #4D5B9E;
+  color: #fff;
+  width: 170px;
+  cursor: pointer;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+}
+
+body::before {
+  top: -80px;
+  right: -80px;
+  background-color: #FFFAD1;
+  border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+}
+
+body::after {
+  bottom: -80px;
+  left: -80px;
+  background-color: #DEEBF8;
+  border-radius: 60% 40% 30% 70% / 60% 50% 50% 40%;
+}
+
+main > form > div.question {
+  border-bottom: 1px solid #DBDEF0;
+  color: #293264;
+  padding: 0.5rem;
+  max-width: 600px;
+}
+
+main > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main > form > div > button.answer {
+  background-color: #fff;
+  border: 1px solid #4D5B9E;
+  color: #293264;
+  border-radius: 8px;
+  padding: 0.2rem 0.7rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+main > form > button.check-answer {
+  background-color: #4D5B9E;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-size: 12px;
+  margin: 1.5rem auto;
+  max-width: 130px;
+}
+
+main > form > div.question > button.chosenAnswer{
+  background-color: #D6DBF5;
+    border: 1px solid #D6DBF5;
+
+}
