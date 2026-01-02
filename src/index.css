@@ -97,13 +97,59 @@ main > form > button.check-answer {
   border: none;
   padding: 0.8rem 1.2rem;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 14px;
   margin: 1.5rem auto;
   max-width: 130px;
 }
 
-main > form > div.question > button.chosenAnswer{
+main > form > div.question > button.answer.chosenAnswer {
   background-color: #D6DBF5;
-    border: 1px solid #D6DBF5;
+  border-color: #D6DBF5;
+}
 
+main > form > div.question > button.answer {
+  background-color: #fff;
+  border: 1px solid #4D5B9E;
+  color: #293264;
+  border-radius: 8px;
+  padding: 0.2rem 0.7rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+main > form > div.question > button.answer.correct {
+  background-color: #94D7A2 !important;
+  border-color: #94D7A2 !important;
+  color: #293264;
+  opacity: 1;
+}
+
+main > form > div.question > button.answer.incorrect {
+  background-color: #F8BCBC !important;
+  border-color: #F8BCBC !important;
+  opacity: 0.5;
+}
+
+main > form > div.question > button.answer.dimmed {
+  opacity: 0.5;
+  border: 1px solid #4D5B9E;
+}
+
+main > form > div > button.play-again {
+  background-color: #4D5B9E;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+main > form > div.game-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
 }
